@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Куни от Ниги</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #0f0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .photos {
+      margin-top: 30px;
+    }
+
+    .photos img {
+      max-width: 200px;
+      margin: 10px;
+      border: 3px solid #0f0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="hidden">
+  <h1>Заказать куни от ниги</h1>
+  <h2>Цена: 5000 сум за 1 минуту</h2>
+
+  <div class="photos">
+   <img src="./photo_2025-07-25_16-46-58.jpg" alt="">
+   <img src="./photo_2025-07-25_16-47-18.jpg" alt="">
+   <img src="./photo_2025-07-25_16-47-35.jpg" alt="">
+  </div>
+
+  <script>
+    const password = prompt("Введите пароль:");
+
+    if (password === "кунимен-нига") {
+      document.body.classList.remove("hidden");
+    } else {
+      alert("Неверный пароль!");
+      document.write("<h2 style='color: red; text-align: center;'>Доступ запрещён</h2>");
+    }
+  </script>
+</body>
+</html>
